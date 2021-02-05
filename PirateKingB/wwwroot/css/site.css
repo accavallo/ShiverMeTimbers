@@ -1,37 +1,101 @@
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification 
-for details on configuring this project to bundle and minify static web assets. */
+:root{
+   --pirate-red: #FE0000;
+   --pirate-dark-red: #310000;
+   --pirate-off-white: #CFCFE7;
+   --pirate-faded-red: #885E5F;
+   --pirate-gray: #5B5C70;
+   --pirate-faded-dark-red: #452F3B;
+   --pirate-faded-gray: #686880;
+   --pirate-not-so-dark-red: #80000D;
+   --pirate-dark-gray: #303146;
+   --pirate-white: #FFF;
+}
+
+
 body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+   color: var(--pirate-white);
+   background-color: var(--pirate-dark-red);
+   font-family: Arial;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+html, body {
+   height: 100%;
+   width: 100%;
 }
 
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
+.footer {
+   position: fixed;
+   bottom: 0px; /*Needed to keep the footer actually at the bottom of the screen*/
+   width: 100%;
+   height: 60px;
+   line-height: 60px;
+   text-align: center;
+   font-size: 14px;
 }
 
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
+
+.pirate-carousel {
+   width: auto;
+   height: auto;
+   max-height: 560px;
 }
 
-/* QR code generator */
-#qrCode {
-    margin: 15px;
+.pirate-compass:link, .pirate-compass:visited {
+   font-size: 18px;
+   color: var(--pirate-white);
+   text-align: center;
+   text-decoration: none;
+   padding: 5px;
+}
+
+.pirate-icon {
+   text-align: center;
+   text-decoration: none;
+   padding: 5px;
+   fill: var(--pirate-white);
+}
+
+.pirate-icon:hover, .pirate-compass:hover {
+   fill: var(--pirate-red);
+   color: var(--pirate-red);
+   transition: 1s;
+   text-decoration: none;
+}
+
+.pirate-overlow {
+   overflow-y: hidden;
+}
+
+.pirate-image-main {
+   width: auto;
+   height: auto;
+   max-height: 40%;
+}
+
+.pirate-image-smallish {
+   width: auto !important;
+   height: 12% !important;
+}
+
+.pirate-links {
+   text-decoration: underline;
+   color: var(--pirate-white);
+}
+
+.pirate-links:hover, .pirate-links:visited {
+   transition: 1s;
+   text-decoration: underline;
+   color: var(--pirate-red);
+}
+
+.pirate-right {
+   text-align: right !important;
 }
 
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
+   /* Hide captions */
+   .carousel-caption {
         display: none;
     }
 }

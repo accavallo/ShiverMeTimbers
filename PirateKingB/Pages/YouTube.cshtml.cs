@@ -7,10 +7,12 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace PirateKingB.Pages
 {
-   public class PrivacyModel : PageModel
-   {
-      public void OnGet()
-      {
-      }
-   }
+    public class YouTubeModel : PageModel
+    {
+        public string Message { get; set; }
+        public void OnGet()
+        {
+            Message = "YouTube page, son!";
+        }
+    }
 }

@@ -12,7 +12,7 @@ namespace PirateKingB.Pages
 
       public void OnGet()
       {
-         Message = "Your application description page.";
+         Message = "PirateKingB LLC";
       }
    }
 }

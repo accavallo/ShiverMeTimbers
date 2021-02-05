@@ -1,9 +1,45 @@
 ﻿@page
 @model AboutModel
 @{
-    ViewData["Title"] = "About";
+   ViewData["Title"] = "About";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
+<div class="container-fluid mt-1 text-center">
+   <div class="row mb-2">
+      <div class="col-3"></div>
+      <div class="col-6"><h2>@Model.Message</h2></div>
+      <div class="col-3"></div>
+   </div>
+   <div class="row mb-1">
+      <div class="col-4"></div>
+      <div class="col-4">
+         PirateKingB LLC is an Online Streamer provided on <a class="pirate-links" href="https://twitch.tv/piratekingb" target="_blank" rel="noopener noreferrer">Twitch</a>. This adventure was started in January of 2021 during a time where death and sadness is rampant in the world.
+         I wanted to provide an outlet to people that wanted an escape from the norm to come and laugh and grow together.
+         I am a former Marine currently Retired and have been playing games for YEARS. I am also a Game Designer since 2017. I am also a Husband and Father to one son and one fur-baby.
+         Please come watch and follow at your leisure.
+      </div>
+      <div class="col-4"></div>
+   </div>
+   <div class="row">
+      <div class="col-12">
+         <div class="carousel slide" data-ride="carousel" data-interval="2000">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <img class="pirate-carousel" src="@Url.Content("~/images/Transparent Logo.png")" />
+               </div>
+               <div class="carousel-item">
+                  <img class="pirate-carousel" src="@Url.Content("~/images/PirateKingBMainImage.webp")" />
+               </div>
+               <div class="carousel-item">
+                  <img class="pirate-carousel" src="@Url.Content("~/images/photomode_02012021_081441.png")" />
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
 
-<p>Use this area to provide additional information.</p>
+@*<style type="text/css">
+   img {
+      max-height: 560px
+   }
+</style>*@
