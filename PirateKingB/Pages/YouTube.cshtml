@@ -1,8 +1,17 @@
 ﻿@page
 @model YouTubeModel
 @{
-    ViewData["Title"] = "YouTube";
+   ViewData["Title"] = "YouTube";
 }
 
 <h2>YouTube</h2>
 <h3>@Model.Message</h3>
+
+<script src="@Url.Content("~/js/site.js")"></script>
+<script>
+   $(document).ready(function () {
+      $('@Html.Raw(Model.YouTubeCarouselItems)').appendTo('.carousel-inner');
+      $('@Html.Raw(Model.YouTubeListItems)').appendTo('.carousel-indicators');
+      CarouselEvent();
+   });
+</script>
