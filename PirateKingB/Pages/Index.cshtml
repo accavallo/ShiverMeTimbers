@@ -4,10 +4,14 @@
     ViewData["Title"] = "The Pirate's Cove";
 }
 
-<div class="container mt-1 text-center">
-   <div class="row">
-      <div class="col-12">
-         <img class="pirate-image-main" src="@Url.Content("~/images/Transparent Logo.png")" />
-      </div>
-   </div>
-</div>
+@section PirateBackground {
+    <style type="text/css">
+        body {
+            background-image: url("@Url.Content("~/images/Transparent Logo.png")");
+            background-position: 50% 8%;
+            background-repeat: no-repeat;
+            background-size: 45%;
+        }
+    </style>
+}
+
