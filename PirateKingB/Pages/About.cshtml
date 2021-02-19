@@ -21,7 +21,7 @@
    </div>
    <div class="row">
       <div class="col-12">
-         <div class="carousel slide multi-item-carousel" id="shiverMeCarouselMatey" data-ride="carousel" data-interval="2000">
+         <div class="carousel slide" id="shiverMeCarouselMatey" data-ride="carousel" data-interval="4000">
             <ol class="carousel-indicators"></ol>
             <div class="carousel-inner"></div>
          </div>
@@ -42,6 +42,5 @@
    $(document).ready(function () {
       $('@Html.Raw(Model.AboutCarouselItems)').appendTo('.carousel-inner');
       $('@Html.Raw(Model.AboutListItems)').appendTo('.carousel-indicators');
-      CarouselEvent();
    });
 </script>
