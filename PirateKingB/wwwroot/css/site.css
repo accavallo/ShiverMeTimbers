@@ -60,6 +60,11 @@ body {
    fill: var(--pirate-white);
 }
 
+.pirate-svg {
+    width: 16px;
+    height: 16px;
+}
+
 .pirate-icon:hover, .pirate-chart:hover {
    fill: var(--pirate-red);
    color: var(--pirate-red);
@@ -149,5 +154,9 @@ body {
     }
     .pirate-carousel {
         width: 100%;
+    }
+    .pirate-svg {
+        width: 24px;
+        height: 24px;
     }
 }
