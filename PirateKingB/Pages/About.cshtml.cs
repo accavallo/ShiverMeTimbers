@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.IO;
+using System.Text;
 
 namespace PirateKingB.Pages
 {
@@ -20,8 +19,8 @@ namespace PirateKingB.Pages
             {
                string[] lines = File.ReadAllLines(filePath);
 
-               System.Text.StringBuilder carouselBuilder = new System.Text.StringBuilder("");
-               System.Text.StringBuilder listBuilder = new System.Text.StringBuilder("");
+               StringBuilder carouselBuilder = new StringBuilder("");
+               StringBuilder listBuilder = new StringBuilder("");
                for (int index = 0; index < lines.Length; index++)
                {
                   string url = lines.ElementAt(index);
@@ -35,7 +34,8 @@ namespace PirateKingB.Pages
                      listBuilder.Append(" class=\"active\"");
                   }
                   carouselBuilder.Append("\">");
-                  carouselBuilder.Append("<div class=\"item__third\"><img class=\"pirate-carousel\" src=\"");
+                        //class=\"item__third\" //Leftover from showing a previous and next item in the carousel
+                  carouselBuilder.Append("<div><img class=\"pirate-carousel\" src=\"/images/");
                   carouselBuilder.Append(url);
                   carouselBuilder.Append("\" /><div class=\"carousel-caption d-none d-md-block\"></div></div></div>");
 

@@ -1,3 +1,4 @@
-/images/Transparent Logo.png
-/images/PirateKingBMainImage.webp
-/images/photomode_02012021_081441.png
+Transparent Logo.png
+PirateKingBMainImage.webp
+photomode_02012021_081441.png
+midair.gif
